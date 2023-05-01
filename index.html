@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>sign up form</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div>
-            <h3>Header logo</h3>
-            <div>
-                <a>header one</a>
-                <a>header two</a>
-                <a>header three</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up form</title>
+</head>
+<body>
+    <div class="container">
+    <!-- <img src="./pics/halie-west-25xggax4bSA-unsplash.jpg" alt="leaf"> -->
+    <div class="main_container">
+        <p>It has been such a long time writing code.<br>Here you go as you try refresh your knowledge of HTML, CSS and Js.<br>Be sure to <b>Sign up</b></p>
+        <form>
+            <div class="input">
+                <label>First Name:</label>
+                <input type="text" name="first_name" placeholder="John">
             </div>
-            <div>
-                <h2>This website is Awesome</h2>
-                <p>This is such an awesome website.I look forward to working with it</p>
-                <button>Sign up</button>
-                <img>
+           
+            <div class="input">
+                <label>Last Name:</label>
+                <input type="text" name="last_name" placeholder="Doe">
             </div>
-            <div>
-                <div>Pic one</div>
-                <div>Pic two</div>
-                <div>Pic three</div>
-                <div>Pic four</div>
-            </div>
-
-            <div>
-                <p>
-                  This is a very inspiring quote that will change your life.
-                  Be sure to have it in mind everyday as you go about your day.  
-                </p>
-            </div>
-
-            <div>
-               <h3>Call to action</h3>
-               <h5>Make sure you sign up</h5>
-               <button>Sign up</button>
-            </div>
-
-            <footer>
-                Copyright@ 2019
-            </footer>
             
-        </div>
-    </body>
+            <div class="input">
+                <label>Email:</label>
+                <input type="email" id="email" name="email"placeholder="johndoe@gmail.com">
+            </div>
+           
+            <div class="input"> 
+                <label>Phone number:</label>
+                <input type="text" id="phone_number">
+            </div>
+           
+            <div class="input">
+                <label>Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            
+            <div class="input">
+                <label>Confirm Password:</label>
+                <input type="password" id="password">
+            </div>
+            
+            <button type="submit">Create Account</button>
+        </form>
+        Already have an account?<b>Log in</b>
+    </div>
+</div>
+</body>
 </html>
