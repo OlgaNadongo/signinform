@@ -8,11 +8,13 @@
     <title>Sign Up form</title>
 </head>
 <body>
+
+<!-- Signup Form -->
     <div class="container">
     <!-- <img src="./pics/halie-west-25xggax4bSA-unsplash.jpg" alt="leaf"> -->
     <!-- <div class="main_container"> -->
         <p>It has been such a long time writing code.<br>Here you go as you try refresh your knowledge of HTML, CSS and Js.<br>Be sure to <b>Sign up</b></p>
-        <form>
+        <form id="signupform">
             <div class="content">
                 <div class="input-item">
                     <label>First Name:</label>
@@ -52,15 +54,58 @@
             </div>
 
             <div class="button-container">
-                <Button>Create account</Button>
+                <Button id="btn" onclick="clickbutton">Create account</Button>
                 <!-- <input type="submit"> -->
+                <button id="textwk" onclick="myfunction()">Hit me</button>
+                <p id="demo"></p>
             </div>
+
+           
             
         </form>
 
        
-        Already have an account?<a href="#">Log in</a>
+        Already have an account?<a href="#loginform">Log in</a>
  
 </div>
+
+<!-- Login form -->
+
+<div class="container">
+    
+        
+        <form id="loginform">
+            <div class="content">
+                
+                
+                <div class="input-item">
+                    <label>Email:</label>
+                    <input type="email" id="email" name="email"placeholder="johndoe@gmail.com">
+                </div>
+               
+               
+                <div class="input-item">
+                    <label>Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                
+                
+                    <!-- <button type="submit">Create Account</button> -->
+            </div>
+
+            <div class="button-container">
+                <Button id="btn" onclick="loggedinside()">Login</Button>
+                
+                <p id="loggedin"></p>
+            </div>
+
+           
+            
+        </form>
+
+       
+        Don't have an account?<a href="#signupform">Sign up</a>
+</div>
+<script src="form.js"></script>
 </body>
 </html>
