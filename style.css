@@ -81,3 +81,7 @@ outline: none;
 .demo{
  color: red;
 }
+
+#switchlogin{
+    background-image: linear-gradient(to right,#aa076b, #61045f);
+}
