@@ -18,32 +18,32 @@
             <div class="content">
                 <div class="input-item">
                     <label>First Name:</label>
-                    <input type="text" name="first_name" placeholder="John">
+                    <input type="text" id="fname" placeholder="John" required>
                 </div>
                
                 <div class="input-item">
                     <label>Last Name:</label>
-                    <input type="text" name="last_name" placeholder="Doe">
+                    <input type="text" id="lname"  placeholder="Doe"required>
                 </div>
                 
                 <div class="input-item">
                     <label>Email:</label>
-                    <input type="email" id="email" name="email"placeholder="johndoe@gmail.com">
+                    <input type="email" id="email" name="email"placeholder="johndoe@gmail.com"required>
                 </div>
                
                 <div class="input-item"> 
                     <label>Phone number:</label>
-                    <input type="text" id="phone_number">
+                    <input type="text" id="pnumber" required>
                 </div>
                
                 <div class="input-item">
                     <label>Password:</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                 </div>
                 
                 <div class="input-item">
                     <label>Confirm Password:</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" required>
                 </div>
                 <div class="input-item">
                     <label>Recieve alerts?</label>
@@ -53,12 +53,15 @@
                     <!-- <button type="submit">Create Account</button> -->
             </div>
 
-            <div class="button-container">
-                <Button id="btn" onclick="clickbutton">Create account</Button>
-                <!-- <input type="submit"> -->
-                <button id="textwk" onclick="myfunction()">Hit me</button>
+            <!-- <div class="button-container">
+                <Button id="btn" onsubmit="clickbutton">Create account</Button> -->
+          <div class="button-container">
+            <input type="submit" value="Create account">
+          </div>
+                
+                <!-- <button id="textwk" onclick="myfunction()">Hit me</button>
                 <p id="demo"></p>
-            </div>
+            </div> -->
 
            
             

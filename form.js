@@ -1,30 +1,13 @@
-function clickbutton(){
-    document.getElementById("btn").style.color='green';
-}
-
-function myfunction(){
-    var text1="Hello"
-    var text2="Citizens"
-    var text3= text1+" "+text2
-
-    document.getElementById("demo").innerHTML=text3
-}
-
-function loggedinside(){
-    var greeting1="Welcome back,"
-    var greetingname="Olga"
-
-    document.getElementById("loggedin").innerHTML=greeting1+" "+greetingname
-}
-
-// show/hide login and signup forms
-
-// document.getElementById('switchlogin').addEventListener('click',()=>{
-//     document.getElementById('signupform').style.display='none'
-//     document.getElementById('loginform').style.display='block'
-// })
-
-// document.getElementById('switchsignup').addEventListener('click',()=>{
-//     document.getElementById('loginform').style.display='none'
-//     document.getElementById('signupform').style.display='block'
-// })
+let signupformevent=document.getElementById("signupform")
+signupformevent.addEventListener("submit",function(event){event.preventDefault() 
+                                                          let fname=document.getElementById("fname").value
+                                                          console.log(fname)
+                      
+                                                          let lname=document.getElementById("lname").value
+                                                          console.log(lname)
+                                                          let email=document.getElementById("email").value
+                                                          console.log(email)
+                                                          let password=document.getElementById("password").value
+                                                          console.log(password)
+                                                          
+                                                         })
